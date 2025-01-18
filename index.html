@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-color: pink; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <h2><strong><u>Javascript async and await.</u></strong></h2>
+    <p id="result"></p>
+
+<script>
+    async function multiply(a, b) {
+        var response = await a * b;
+        display(response);
+    }
+    function display(multiply) {
+        document.getElementById("result").innerHTML = multiply;
+    }
+
+    multiply(15, 75);
+</script>
+</body>
+</html>
